@@ -1,0 +1,78 @@
+/* Overlay for full-page modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8); /* Light overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden; /* Prevent scrolling behind the modal */
+}
+
+/* Modal content styling */
+.modal-content {
+  background: #ffffff; /* Light white background */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  position: relative;
+}
+
+/* Modal header styling */
+.modal-content h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+/* Modal message styling */
+.modal-content p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Button container styling */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.modal-buttons button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Confirm button styling */
+.btn-confirm {
+  background-color: #0066ff;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background-color: #0004ff;
+}
+
+/* Cancel button styling */
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #c82333;
+}

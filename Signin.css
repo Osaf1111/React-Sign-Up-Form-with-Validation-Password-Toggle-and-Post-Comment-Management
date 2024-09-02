@@ -1,0 +1,101 @@
+/* General container styling */
+.signin-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    background: #f4f4f4;
+}
+
+/* General form styling */
+.signin-form {
+    max-width: 400px;
+    width: 100%;             
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for input fields */
+.signin-form input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+}
+
+/* Styling for password field with toggle icon */
+.password-container {
+    position: relative;
+}
+
+.password-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 30px; /* Space for the toggle icon */
+}
+
+/* Popup styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.popup-message {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.popup-close {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.popup-close:hover {
+    background-color: #c82333;
+}

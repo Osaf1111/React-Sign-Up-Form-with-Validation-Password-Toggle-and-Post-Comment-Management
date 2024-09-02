@@ -1,0 +1,211 @@
+Base Styling
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/* Container for centering the form */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form styling */
+.signin-form {
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.signin-form h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Form element styling */
+.signin-form .mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.signin-form .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.signin-form .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    position: relative; /* Ensure positioning for the toggle icon */
+}
+
+.signin-form .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.signin-form .form-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.signin-form .btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.125rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signin-form .btn:hover {
+    background-color: #0056b3;
+}
+
+.signin-form .btn:disabled {
+    background-color: #ccc;
+}
+
+/* Link styling */
+.signin-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signin-form a:hover {
+    text-decoration: underline;
+}
+
+/* Error message styling */
+.alert {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signin-form {
+        padding: 1.5rem;
+    }
+
+    .signin-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .signin-form .form-control {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .signin-form .btn {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .signin-form {
+        padding: 1rem;
+        border-radius: 6px;
+    }
+
+    .signin-form h2 {
+        font-size: 1.25rem;
+    }
+
+    .signin-form .form-control {
+        font-size: 0.85rem;
+        padding: 0.4rem;
+    }
+
+    .signin-form .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+}
+
+/* Password Toggle Styling */
+.password-toggle {
+    position: absolute;
+    right: 10px; /* Adjust as needed for spacing */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding-top: 25px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+/* Popup Image */
+.popup-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Popup Message */
+.popup-message {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Close Button */
+.popup-close {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.popup-close:hover {
+    background-color: #0056b3;
+}
